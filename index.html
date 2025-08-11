@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Nhập mật khẩu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <div class="login-box">
+    <h2>Nhập mật khẩu để mở quà 🎁</h2>
+    <input type="password" id="password" placeholder="Mật khẩu">
+    <button onclick="checkPassword()">Mở</button>
+    <p id="message"></p>
+  </div>
+
+<script>
+function checkPassword() {
+  const pass = document.getElementById("password").value;
+  if (pass === "27072002") { // đổi mật khẩu tùy ý
+    window.location.href = "birthday.html";
+  } else {
+    document.getElementById("message").innerText = "Sai mật khẩu! 😅";
+  }
+}
+</script>
+</body>
+</html>
